@@ -1,5 +1,5 @@
 
-# Sesión #: Nombre de la sesión
+# :wave: Sesión 01: Firebase Authentication - Simplifica el inicio de sesión y el registro
 
 ## :dart: Objetivos
 

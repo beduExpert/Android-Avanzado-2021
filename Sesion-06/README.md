@@ -1,5 +1,5 @@
 
-# Sesión #: Nombre de la sesión
+# :wave: Sesión 06: Deploys - Publica en tiendas altenativas a Google Play o en un servidor propio
 
 ## :dart: Objetivos
 

@@ -1,5 +1,5 @@
 
-# Sesión #: Nombre de la sesión
+# :wave: Sesión 08: RA - Suma valor audiovisual con RA
 
 ## :dart: Objetivos
 

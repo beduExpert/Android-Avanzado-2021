@@ -1,5 +1,5 @@
 
-# Sesión #: Nombre de la sesión
+# :wave: Sesión 03: Dependencias - Simplifica el código
 
 ## :dart: Objetivos
 

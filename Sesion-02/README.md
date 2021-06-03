@@ -1,5 +1,5 @@
 
-# Sesión #: Nombre de la sesión
+# :wave: Sesión 02: Firebase Crashlytics - Reportes y seguimiento a errores
 
 ## :dart: Objetivos
 

@@ -2,11 +2,11 @@
 
 ## :wave: Bienvenid@s
 
-Dar la bienvenida al alumno describiendo el contexto general del módulo. (Borrar está linea una vez se hay leido. **Está información se basa en el alance que se encuentra en la ficaha técnica de cada módulo.**
+Desarrollar una app Android con funciones agregadas mediante Firebase Authentication, Firebase Crashlytics, Dependencias, Navigation, SDK´s, Deploys, Librerías y RA.
 
 ## :dart: Objetivo
 
-Describir el objetivo general del módulo **Obligatorio**. (Borrar está linea una vez se hay leido) 
+Construir una aplicación Android con funciones inyectadas por dependencias y librerías, con simplificación de autenticación, reporte y seguimiento de errores, servicios de terceros, elementos de realidad aumentada, y publicable en tiendas alternativas a Google Play y/o en un servidor propio.
 
 ## :gear: Requerimientos
 
@@ -18,13 +18,11 @@ Describir el proyecto en caso de que el módulo lo requiera **Obligatorio** .  (
 
 ## :bookmark_tabs: Sesiones
 
-##### Describir el temario del módulo **Obligatorio** . (Borrar está linea una vez se hay leido) 
-
-- [`Sesión 01:` Nombre de la sesión 01](./Sesion-01)
-- [`Sesión 02:` Nombre de la sesión 02](./Sesion-02)
-- [`Sesión 03:` Nombre de la sesión 03](./Sesion-03)
-- [`Sesión 04:` Nombre de la sesión 04](./Sesion-04)
-- [`Sesión 05:` Nombre de la sesión 05](./Sesion-05)
-- [`Sesión 06:` Nombre de la sesión 06](./Sesion-06)
-- [`Sesión 07:` Nombre de la sesión 07](./Sesion-07)
-- [`Sesión 08:` Nombre de la sesión 08](./Sesion-08)
+1. [Firebase Authentication ](./sesion-01)(Simplifica el inicio de sesión y el registro)
+2. [Firebase Crashlytics ](./sesion-02)(Reportes y seguimiento a errores)
+3. [Dependencias ](./sesion-03)(Simplifica el código)
+4. [Navigation ](./sesion-04)(Mejora el flujo de datos)
+5. [Terceros ](./sesion-05)(Implementar SDK's de terceros) Facebook, Paypal, Spotify, Conekta
+6. [Deploys ](./sesion-06)(Publica en tiendas altenativas a Google Play o en un servidor propio)
+7. [Librerías ](./sesion-07)(Ahorra código y mejora el flujo)
+8. [RA ](./sesion-08)(Suma valor audiovisual con RA)

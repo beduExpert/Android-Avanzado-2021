@@ -1,5 +1,5 @@
 
-# Sesión #: Nombre de la sesión
+# :wave: Sesión 04: Navigation - Mejora el flujo de datos
 
 ## :dart: Objetivos
 

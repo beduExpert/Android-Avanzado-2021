@@ -1,5 +1,5 @@
 
-# Sesión #: Nombre de la sesión
+# :wave: Sesión 07: Librerías - Ahorra código y mejora el flujo
 
 ## :dart: Objetivos
 
