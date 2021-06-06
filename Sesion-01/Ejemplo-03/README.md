@@ -1,13 +1,19 @@
-# Ejemplo 03: Acceso con número teléfonico
+# Ejemplo 03: Accede con número telefónico
 
 ## Objetivo
 
-* Crear cuenta con número teléfonico
-* Iniciar sesión con número teléfonico
+* Crear cuenta con número telefónico
+* Iniciar sesión con número telefónico
 
 ## Desarrollo
 
-Antes de modificar el código vamos a generar las huellas digitales de nuestro proyecto. En Android studio damos clic en:
+Antes de modificar el código vamos a generar las huellas digitales de nuestro proyecto y activar API DeviceCheck. 
+
+En Google Cloud Console, habilita la [API de Android DeviceCheck](https://console.cloud.google.com/apis/library/androidcheck.googleapis.com?authuser=0) en tu proyecto. Se usará la clave de API de Firebase predeterminada, y se debe tener acceso a la API de DeviceCheck.
+
+  <img src="assets/14.png" width="70%"/>
+
+En Android studio damos clic en:
 
 - Build -> Generate Signed Bundle or APK
 
@@ -261,7 +267,7 @@ Ya configuradas las huellas vamos al código
       }
       ``` 
 
-7. Ejecutamos la app y registramos un número teléfonico
+7. Ejecutamos la app y registramos un número telefónico
 
     <img src="assets/12.png" width="70%"/>
 

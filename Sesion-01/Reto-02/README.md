@@ -1,6 +1,6 @@
 # Reto  02: Verificar y reenviar código
 
-En el ejemplo 3 solicitamos el código para registrar usuario con número teléfonico, ahora concluiremos el registro.
+En el ejemplo 3 solicitamos el código para registrar usuario con número telefónico, ahora concluiremos el registro.
 
 ## Objetivo
 

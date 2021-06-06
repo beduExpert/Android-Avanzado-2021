@@ -1,7 +1,7 @@
-# Postwork 1 - Acceso con Google
+# Postwork 1 - Accede con Google
 
-En los ejemplos de está sesión aprendimos a iniciar sesión y registrar usuarios sin agregar código del lado del servidor.
-Para el primer postwork queremos poner en practica, lo que ya aprendiste. El proyecto base tiene el botón de Google, cuando demos clic en este botón no debe permitir iniciar sesión con algún correo de Google. Te recomendamos apoyarte con la [documentación](https://firebase.google.com/docs/auth/android/google-signin)
+En los ejemplos de esta sesión aprendimos a iniciar sesión y registrar usuarios sin agregar código del lado del servidor.
+Para el primer postwork queremos poner en práctica, lo que ya aprendiste. El proyecto base tiene el botón de Google, cuando demos clic en este botón no debe permitir iniciar sesión con algún correo de Google. Te recomendamos apoyarte con la [documentación](https://firebase.google.com/docs/auth/android/google-signin)
 
 ## Objetivo
 
@@ -12,7 +12,7 @@ Para el primer postwork queremos poner en practica, lo que ya aprendiste. El pro
 > TIPS: 
 > - Recuerda habilitar el inicio por Google en Firebase Console
 > - Agregar la dependencia
->   - implementation 'com.google.android.gms:play-services-auth:19.0.0'
+>   - Implementation 'com.google.android.gms:play-services-auth:19.0.0'
 > - Puedes hacer la implementación en el *MainActivity*
 
 Propuesta de flujo
@@ -106,6 +106,8 @@ Propuesta de flujo
       }
     }
   ```
+
+  Ejecuta la app e inicia con Google, al final deberías de ver tu correo en el panel de usuarios en Firebase Console
 
 </details>
 

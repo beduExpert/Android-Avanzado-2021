@@ -49,10 +49,9 @@ Antes de implementar firebase en nuestra app, debemos configurar un proyecto en 
 - [Ejemplo 01:  Implementar Firebase Authentication](./Ejemplo-01/README.md)
 - [Ejemplo 02: Registro con correo y contraseña](./Ejemplo-02/README.md)
     - [Reto 01: Iniciar sesión](./Reto-01/README.md)
-- [Ejemplo 03: Acceso con número teléfonico](./Ejemplo-02/README.md)
+- [Ejemplo 03: Accede con número telefónico](./Ejemplo-03/README.md)
     - [Reto  02: Verificar y reenviar código](./Reto-02/README.md)
-- [Ejemplo 04: Acceso con Google](./Ejemplo-02/README.md)
-- [Postwork: Acceso anónimo](./Postwork/README.md)
+- [Postwork: Accede con Google](./Postwork/README.md)
 
 
 
