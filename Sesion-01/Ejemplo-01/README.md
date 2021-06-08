@@ -38,7 +38,7 @@ Para esto, utilizaremos el [Proyecto base](./base) e iremos implementando las mo
 
 5. Ahora vamos al paso 2 en Android studio, dando clic al botón *Add the firebase...* y aceptamos los cambios. 
 
-    Esto Agregará *Play Services y Auth*
+    Esto Agrega *Play Services y Auth*
 
     <img src="assets/08.png" width="60%"/>
 

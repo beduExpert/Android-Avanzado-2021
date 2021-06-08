@@ -1,6 +1,6 @@
 # Reto  02: Verificar y reenviar código
 
-En el ejemplo 3 solicitamos el código para registrar usuario con número telefónico, ahora concluiremos el registro.
+En el ejemplo 3 solicitamos el código para registrar usuario con número telefónico, ahora concluimos el registro.
 
 ## Objetivo
 
@@ -10,7 +10,7 @@ En el ejemplo 3 solicitamos el código para registrar usuario con número telef�
 ## Desarrollo
 
 
-1. Crear PhoneAuthProvider con el código de verificación y el code que recibio por SMS, después solicitar la comprobación con la función **signInWithPhoneAuthCredential**, el resto lo hará *updateUI*
+1. Crear PhoneAuthProvider con el código de verificación y el code que recibió por SMS, después solicitar la comprobación con la función **signInWithPhoneAuthCredential**, el resto lo hará *updateUI*
 
     > TIP: Crear Provider -> PhoneAuthProvider.getCredential(verificationId, userCode)
 
@@ -37,7 +37,7 @@ En el ejemplo 3 solicitamos el código para registrar usuario con número telef�
 
 </br>
 
-2. Si el código ya expiró o lo escribimos mal, agregar acción al botón actual, para sollicitar un nuevo código, agregar la petición en la función **resendVerificationCode**
+2. Si el código ya expiró o lo escribimos mal, agregar acción al botón actual, para solicitar un nuevo código, agregar la petición en la función **resendVerificationCode**
 
     > TIP: La llamada es muy similar a **startPhoneNumberVerification**
 

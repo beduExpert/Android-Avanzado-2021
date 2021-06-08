@@ -4,7 +4,7 @@
 
 * Conectar la interfaz con las llamadas de Auth
 * Crear cuenta con correo y contraseña
-* Notificar al usuario con las respuestad de Auth
+* Notificar al usuario con las respuestas de Auth
 
 ## Desarrollo
 
@@ -48,7 +48,7 @@
     auth = Firebase.auth
     ```
 
-5. Agregamos la siguiente llamada a la función **createAccount** para registrar el correo y la contraseña que escribio el usuario en la interfaz.
+5. Agregamos la siguiente llamada a la función **createAccount** para registrar el correo y la contraseña que escribió el usuario en la interfaz.
 
     ```kotlin
     auth.createUserWithEmailAndPassword(email, password)
@@ -64,7 +64,7 @@
       }
       ```
 
-      En ambas respuestas *(success - failure)* llamamos a la función *updateUI*, esta se encargará de mostrar los mensajes, así que la reemplzamos con el siguiente bloque de código:
+      En ambas respuestas *(success - failure)* llamamos a la función *updateUI*, esta se encargará de mostrar los mensajes, así que la reemplazamos con el siguiente bloque de código:
 
       ```kotlin
       private fun updateUI(user: FirebaseUser?, exception: Exception?) {
@@ -84,11 +84,11 @@
 
     <img src="assets/04.png" width="70%"/>
 
-    Depués de unos segundos deberíamos ver el siguiente mensaje
+    Después de unos segundos deberíamos ver el siguiente mensaje
 
     <img src="assets/05.png" width="70%"/>
 
-    En Firebase Console deberíamos ver el usuario registrado, en la penstaña de users
+    En Firebase Console deberíamos ver el usuario registrado, en la pestaña de users
 
     <img src="assets/06.png" width="80%"/>
 

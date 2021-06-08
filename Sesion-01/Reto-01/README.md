@@ -7,7 +7,7 @@ En el ejemplo 2 agregamos la función para crear usuarios
 * Agregar inicio de sesión
 * Mostrar mensajes
   * Registro no encontrado
-  * Contraseña erronea
+  * Contraseña errónea
   * Bienvenido
 
 ## Desarrollo

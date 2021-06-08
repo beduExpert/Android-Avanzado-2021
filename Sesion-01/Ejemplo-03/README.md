@@ -21,7 +21,7 @@ En Android studio damos clic en:
 
   <img src="assets/05.png" width="70%"/>
 
-  Se recomienda agregar la siguiente información, ya que esta llave solo se usará para pruebas.
+  Se recomienda agregar la siguiente información, ya que esta llave sólo se usará para pruebas.
 
   Contraseña: android
   Alias: android
@@ -47,7 +47,7 @@ En Android studio damos clic en:
 
   <img src="assets/09.png" width="70%"/> 
 
-  Esto agregará la siguiente linea en el gradle
+  Esto agrega la siguiente línea en el gradle
 
   ```kotlin
   signingConfigs {
@@ -59,7 +59,7 @@ En Android studio damos clic en:
   }
   ```
 
-  - Para generar la huella ejecutamos la siguiente linea en la terminal
+  - Para generar la huella ejecutamos la siguiente línea en la terminal
 
   ```hash
   /opt/android-studio/jre/bin/keytool -list -v -keystore /home/andres/Documentos/Android/DebugKey/debug.keystore -alias android -storepass android -keypass android
@@ -195,7 +195,7 @@ Ya configuradas las huellas vamos al código
     }
     ```
 
-4. Camiamos el tipo de variable para token en la función *resendVerificationCode*
+4. Cambiamos el tipo de variable para token en la función *resendVerificationCode*
 
     ```Kotlin
     token: PhoneAuthProvider.ForceResendingToken?
@@ -250,7 +250,7 @@ Ya configuradas las huellas vamos al código
     }
       ```
 
-      En ambas respuestas *(success - failure)* llamamos a la función *updateUI*, esta se encargará de mostrar los mensajes, así que la reemplzamos con el siguiente bloque de código:
+      En ambas respuestas *(success - failure)* llamamos a la función *updateUI*, esta se encargará de mostrar los mensajes, así que la reemplazamos con el siguiente bloque de código:
 
       ```kotlin
       private fun updateUI(user: FirebaseUser?, exception: Exception?) {
@@ -271,13 +271,13 @@ Ya configuradas las huellas vamos al código
 
     <img src="assets/12.png" width="70%"/>
 
-    Depués de unos segundos deberíamos ver el siguiente mensaje
+    Después de unos segundos deberíamos ver el siguiente mensaje
 
     <img src="assets/13.png" width="70%"/>
 
     Si utilizaste tu número de teléfono deberías de recibir un mensaje de texto con el código
 
-Felicidades ahora tu app puede enviar códigos de verificación, en el siguiente reto validaraz el código y concluiras el registro.
+Felicidades ahora tu app puede enviar códigos de verificación, en el siguiente reto validará el código y concluirá el registro.
 
 </br>
 
