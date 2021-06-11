@@ -22,10 +22,10 @@ Para hacerlo realiza los siguientes pasos:
     <details>
       <summary>Solución</summary>
 
-    Filtrar por versión de app y tipo de error.
-    Seleccionar rango de fecha para visualizar errores por lapso de tiempo.
-    Filtrar por estado del problema, dispositivo y sistema operativo.
-    Buscar error por ID del usuario.
+    - Filtrar por versión de app y tipo de error.
+    - Seleccionar rango de fecha para visualizar errores por lapso de tiempo.
+    - Filtrar por estado del problema, dispositivo y sistema operativo.
+    - Buscar error por ID del usuario.
 
     > Nota: Más adelante revisamos cada una de estas opciones
 
@@ -42,18 +42,20 @@ Para hacerlo realiza los siguientes pasos:
     <details>
       <summary>Solución</summary>
 
-    Filtrar por versión de app, tipo de error, estado del problema, dispositivo y sistema operativo.
-    Número de veces que se ha producido el error y a cuántos usuarios ha afectado.
-    Filtrar por selección de rango de fecha.
-    Eventos.
-    Seguimiento de pila:
-    Muestra qué, en dónde y porqué surgió el error.
-    Claves:
-    Datos enviados por la app. Se encuentra vacío porque aún no se revisará esa parte.
-    Registros:
-    Clase o vista donde se provocó el error.
-    Datos:
-    Información del Dispositivo (Hardware y Software).
+    - Filtrar por versión de app, tipo de error, estado del problema, dispositivo y sistema operativo.
+    - Número de veces que se ha producido el error y a cuántos usuarios ha afectado.
+    - Filtrar por selección de rango de fecha.
+    - Eventos.
+        - Seguimiento de pila:
+            - Muestra qué, en dónde y porqué surgió el error.
+        - Claves:
+            - Datos enviados por la app. Se encuentra vacío porque aún no se revisará esa parte.
+        - Registros:
+            - Clase o vista donde se provocó el error.
+        - Datos:
+            - Información del Dispositivo (Hardware y Software).
+
+    </br>
 
     > Nota: más adelante se utilizan cada una de estas opciones.
 
