@@ -4,17 +4,18 @@ En el ejemplo 2 agregamos la función para crear usuarios
 
 ## Objetivo
 
-* Agregar inicio de sesión
-* Mostrar mensajes
-  * Registro no encontrado
-  * Contraseña errónea
-  * Bienvenido
+* Implementar el inicio de sesión en el proyecto Android y simularlo con respuestas de mensajes de registro no encontrado, contraseña errónea y bienvenido.
 
 ## Desarrollo
 
-Agregar inicio de sesión con Auth, el código es muy similar al registro, solo cambia de **createUserWithEmailAndPassword** a **signInWithEmailAndPassword**
+En el ejemplo 2 se agregó la función para crear usuarios, por lo que ahora se implementará el inicio de sesión y se simulará con todos los escenarios de respuesta.
 
-El resultado esperado debe ser similar a 
+Para hacerlo realiza los siguientes pasos:
+
+1. Agregar inicio de sesión con Auth. Para ello ve a la clase EmailActivity y modifica la función signIn. El código es muy similar a la función createAccount, debe cambiarse de *createUserWithEmailAndPassword* a *signInWithEmailAndPassword*.
+
+Los resultados esperados deben ser similares a los de las siguientes imágenes.
+
 
 <img src="assets/01.png" width="50%"/>
 
@@ -46,7 +47,7 @@ private fun signIn(email: String, password: String) {
 
 </br>
 
-> Las llamadas a Firebase retornan excepciones, por eso no tuvimos que agregar los mensajes de manera manual **task.exception**
+> Las llamadas a Firebase retornan excepciones, y por eso no fue necesario agregar los mensajes de manera manual **task.exception**.
 
 
 </br>

@@ -1,105 +1,94 @@
-# Ejemplo 03: Accede con número telefónico
+# Ejemplo 03: Acceder con número telefónico
 
 ## Objetivo
 
-* Crear cuenta con número telefónico
-* Iniciar sesión con número telefónico
+* Establecer el registro de una cuenta con número telefónico y la simulación del inicio de sesión con el mismo método.
 
 ## Desarrollo
 
-Antes de modificar el código vamos a generar las huellas digitales de nuestro proyecto y activar API DeviceCheck. 
+Con las funciones de creación de usuarios y de inicio de sesión de Auth, ahora se simulará el método del número telefónico.
 
-En Google Cloud Console, habilita la [API de Android DeviceCheck](https://console.cloud.google.com/apis/library/androidcheck.googleapis.com?authuser=0) en tu proyecto. Se usará la clave de API de Firebase predeterminada, y se debe tener acceso a la API de DeviceCheck.
+Para hacerlo realiza los siguientes pasos:
 
-  <img src="assets/14.png" width="70%"/>
+1. Antes de modificar el código deben generarse las huellas digitales de nuestro proyecto y activar API DeviceCheck. En **Google Cloud Console**, habilita la [API de Android DeviceCheck](https://console.cloud.google.com/apis/library/androidcheck.googleapis.com?authuser=0) en tu proyecto. Se usará la clave de API de Firebase predeterminada, y se debe tener acceso a la API de DeviceCheck. Esto se ejemplifica en la siguiente imagen.
 
-En Android studio damos clic en:
+    <img src="assets/14.png" width="70%"/>
 
-- Build -> Generate Signed Bundle or APK
+2. Después, en Android Studio hacemos clic en la siguiente ruta: *Build > Generate Signed Bundle or APK*. Ahí es necesario hacer clic en *Next*, como se visualiza en la siguiente imagen.
 
-  En el modal damos clic en Next
+    <img src="assets/05.png" width="70%"/>
 
-  <img src="assets/05.png" width="70%"/>
+3. Posteriormente, al ingresar datos de identidad se recomienda agregar la siguiente información, ya que esta llave sólo se usará para pruebas.
 
-  Se recomienda agregar la siguiente información, ya que esta llave sólo se usará para pruebas.
+    **Contraseña**: android
 
-  Contraseña: android
-  Alias: android
-  Name: debug
+    **Alias**: android
 
-  <img src="assets/06.png" width="70%"/>
+    **Name**: debug
 
-  Ya creada la llave, tendrá el nombre de **debug.keystore.jks** Eliminamos la extensión **.jks** quedará del siguiente modo **debug.keystore**
+    <img src="assets/06.png" width="70%"/>
 
-  <img src="assets/07.png" width="70%"/>
+4. Al estar creada la llave, esta tendrá el nombre de **debug.keystore.jks**. Se debe eliminar la extensión **.jks**, por lo que quedará del siguiente modo: **debug.keystore**, como se aprecia en la imagen siguiente.
 
+    <img src="assets/07.png" width="70%"/>
 
+5. Después debe hacerse clic en la siguiente ruta: File > Project Structure > Modules > app > Signing Configs y una vez dentro es necesario buscar el archivo de la llave, agregar los datos de usuario y hacer clic en OK. Este proceso se representa en la siguiente imagen.
 
-- Ya creada la llave vamos a
+    <img src="assets/08.png" width="70%"/>
 
-  File -> Project Structure -> Modules -> app -> Signing Configs
+6. Luego, en la pestaña de *Default Config*, en la opción de *Signing Config*, seleccionamos ***$signingConfigs.debug***. Después debe hacerse clic en OK, como se visualiza en la imagen.
 
-  Buscamos la lave, y agregamos los datos
+    <img src="assets/09.png" width="70%"/> 
 
-  <img src="assets/08.png" width="70%"/>
+    Esto agrega la siguiente línea en el gradle
 
-  Después a la pestaña de *Default Config* y en la opción de *Signing Config* seleccionamos ***$signingConfigs.debug*** y luego en Ok
-
-  <img src="assets/09.png" width="70%"/> 
-
-  Esto agrega la siguiente línea en el gradle
-
-  ```kotlin
-  signingConfigs {
-    debug {
-      storeFile file('/home/andres/Documentos/Android/DebugKey/debug.keystore')
-      storePassword 'android'
-      keyAlias 'android'
+    ```kotlin
+    signingConfigs {
+      debug {
+        storeFile file('/home/andres/Documentos/Android/DebugKey/debug.keystore')
+        storePassword 'android'
+        keyAlias 'android'
+      }
     }
-  }
-  ```
+    ```
 
-  - Para generar la huella ejecutamos la siguiente línea en la terminal
+7. Así, para generar la huella ejecutamos la siguiente línea en la terminal.
 
-  ```hash
-  /opt/android-studio/jre/bin/keytool -list -v -keystore /home/andres/Documentos/Android/DebugKey/debug.keystore -alias android -storepass android -keypass android
-  ```
+    ```hash
+    /opt/android-studio/jre/bin/keytool -list -v -keystore /home/andres/Documentos/Android/DebugKey/debug.keystore -alias android -storepass android -keypass android
+    ```
 
-  >TIP: La primera parte es la ruta donde está instalado **keytool**, luego la ruta donde está la llave y después los datos de la llave
+    > Pro-tip: la primera parte es la ruta donde está instalado **keytool**, luego la ruta donde está la llave, y después los datos de ésta.
 
-  La salida espera es:
+    La salida espera es:
 
-  <img src="assets/10.png" width="80%"/>
+    <img src="assets/10.png" width="80%"/>
 
-  >TIP: Guarda la clave SHA1 y SHA256
+    > Pro-tip: guarda la clave SHA1 y SHA256.
 
-- Ahora configuraremos el método de acceso en Firebase Console. En el menú Authentication, seleccionamos la pestaña  *Sign-in method* y habilitamos *Teléfono*
+8. Ahora, configuraremos el método de acceso en Firebase Console. En el menú Authentication debe hacerse clic en la pestaña  *Sign-in method* y habilitarse *Teléfono*. 
 
-  <img src="assets/01.png" width="70%"/>
+    <img src="assets/01.png" width="70%"/>
 
-  Seleccionamos Teléfono y habilitamos el check
+9. Debe hacerse clic para habilitar el check, como se visualiza en la imagen.
 
-  <img src="assets/02.png" width="70%"/>
+    <img src="assets/02.png" width="70%"/>
 
-  Este método requiere unos pasos extra de configuración, ya que la verificación trabaja de dos maneras. ***"En el prework se explicaron estos modos"***
+    Este método requiere unos pasos extra de configuración, ya que la verificación trabaja de dos maneras. Estas formas se explicaron como último subtema en tu Prework. 
 
-  Necesitamos agregar las huellas digitales de nuestra app. Primero vamos a la configuración del proyecto
+10. Es necesario agregar las huellas digitales de nuestra app. Para ello primero se debe dirigir hacia la configuración del proyecto en Firebase.
 
-  <img src="assets/03.png" width="70%"/>
+    <img src="assets/03.png" width="70%"/>
 
-  Al final de la configuración encontramos un botón para *Agregar las huellas*
+    Al final de la configuración figura un botón para *Agregar las huellas*, como se aprecia en la imagen siguiente.
 
-  <img src="assets/04.png" width="70%"/>
+    <img src="assets/04.png" width="70%"/>
 
-  Agregamos las dos huellas generadas, quedando de la siguiente manera
+11. Deben agregarse las dos huellas generadas, y el resultado debe ser el siguiente.
 
-  <img src="assets/11.png" width="70%"/>
+    <img src="assets/11.png" width="70%"/>
 
-</br></br>
-
-Ya configuradas las huellas vamos al código
-
-1. Vamos a modificar **PhoneActivity**
+12. Una vez configuradas las huellas es necesario dirigirse al código. Se modificará **PhoneActivity** de la siguiente manera.
 
     ```kotlin
     //Declaramos las variables
@@ -115,7 +104,7 @@ Ya configuradas las huellas vamos al código
     auth = Firebase.auth
     ```
 
-2. En el clic del botón enviamos las variables declaradas
+13. Después, en el clic del botón deben enviarse las variables declaradas, como se presenta a continuación.
 
     ```kotlin
     ...
@@ -124,8 +113,7 @@ Ya configuradas las huellas vamos al código
     storedVerificationId?.let { it1 -> verifyPhoneNumberWithCode(it1, code) }
     ...
     ```
-
-3. Agregamos el callback de responses
+14. Después se agrega el callback de *responses* de la siguiente forma.
 
     ```kotlin
     callbacks = object : PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
@@ -195,13 +183,13 @@ Ya configuradas las huellas vamos al código
     }
     ```
 
-4. Cambiamos el tipo de variable para token en la función *resendVerificationCode*
+15. Posteriormente se cambia el tipo de variable para token en la función *resendVerificationCode*, como en el siguiente código.
 
     ```Kotlin
     token: PhoneAuthProvider.ForceResendingToken?
     ```
 
-5. Modificamos la función *startPhoneNumberVerification*  con lo siguiente:
+16. Luego modificamos la función *startPhoneNumberVerification*  con el siguiente código:
 
     ```Kotlin
     val options = PhoneAuthOptions.newBuilder(auth)
@@ -213,7 +201,7 @@ Ya configuradas las huellas vamos al código
     PhoneAuthProvider.verifyPhoneNumber(options)
     ```
 
-6. Agregamos la siguiente función **createAccount** para validar las credenciales:
+17. En este paso se agrega la siguiente función para validar las credenciales: **createAccount**, como de la siguiente forma.
 
     ```kotlin
     private fun signInWithPhoneAuthCredential(credential: PhoneAuthCredential) {
@@ -250,7 +238,7 @@ Ya configuradas las huellas vamos al código
     }
       ```
 
-      En ambas respuestas *(success - failure)* llamamos a la función *updateUI*, esta se encargará de mostrar los mensajes, así que la reemplazamos con el siguiente bloque de código:
+18. Asimismo, en ambas respuestas, *(success - failure)*, llamamos a la función *updateUI*, la cual se encargará de mostrar los mensajes, así que la reemplazamos con el siguiente bloque de código.
 
       ```kotlin
       private fun updateUI(user: FirebaseUser?, exception: Exception?) {
@@ -267,17 +255,19 @@ Ya configuradas las huellas vamos al código
       }
       ``` 
 
-7. Ejecutamos la app y registramos un número telefónico
+19. Ahora debe ejecutarse la app un número telefónico, como se aprecia en la imagen.
 
     <img src="assets/12.png" width="70%"/>
 
-    Después de unos segundos deberíamos ver el siguiente mensaje
+20. La respuesta después de unos segundos debería ser la siguiente pantalla.
 
     <img src="assets/13.png" width="70%"/>
 
-    Si utilizaste tu número de teléfono deberías de recibir un mensaje de texto con el código
+    Además, si utilizaste tu número de teléfono deberías de recibir un mensaje de texto con el código.
 
-Felicidades ahora tu app puede enviar códigos de verificación, en el siguiente reto validará el código y concluirá el registro.
+¡Felicidades! Ahora tu app puede enviar códigos de verificación.
+El siguiente reto te espera con el logro de validar el código y concluir el registro.
+
 
 </br>
 

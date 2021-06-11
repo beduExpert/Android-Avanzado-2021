@@ -4,17 +4,18 @@ En el ejemplo 3 solicitamos el código para registrar usuario con número telef�
 
 ## Objetivo
 
-1. Validar código enviado por Auth para concluir registro
-2. Solicitar nuevo código si el nuestro ya expiró
+* Operar el registro de una cuenta con número telefónico y la simulación del inicio de sesión con el mismo método mediante la validación del código de Auth y/o con la solicitud de un código nuevo.
 
 ## Desarrollo
 
+En el ejemplo 3 solicitamos el código para registrar un usuario con el número telefónico y ahora se concluirá el registro de manera satisfactoria y se simulará este método.
+Para hacerlo realiza los siguientes pasos:
 
-1. Crear PhoneAuthProvider con el código de verificación y el code que recibió por SMS, después solicitar la comprobación con la función **signInWithPhoneAuthCredential**, el resto lo hará *updateUI*
+1. Crear PhoneAuthProvider con el código de verificación y el code que se recibió vía SMS. Después solicitar la comprobación con la función **signInWithPhoneAuthCredential**, y el resto lo hará *updateUI*.
 
-    > TIP: Crear Provider -> PhoneAuthProvider.getCredential(verificationId, userCode)
+    > Para ello se debe crear Provider > PhoneAuthProvider.getCredential(verificationId, userCode)
 
-    El resultado esperado debe ser similar a 
+    Los resultados esperados deben ser similares a los siguientes:
 
     <img src="assets/04.png" width="50%"/>
 
@@ -37,11 +38,11 @@ En el ejemplo 3 solicitamos el código para registrar usuario con número telef�
 
 </br>
 
-2. Si el código ya expiró o lo escribimos mal, agregar acción al botón actual, para solicitar un nuevo código, agregar la petición en la función **resendVerificationCode**
+2. Si el código expiró o está mal escrito es necesario agregar una acción al botón actual para solicitar un nuevo código. para ello se debe agregar la petición en la función **resendVerificationCode**.
 
-    > TIP: La llamada es muy similar a **startPhoneNumberVerification**
+    > Pro-tip: Esta llamada es muy similar a **startPhoneNumberVerification**.
 
-    El resultado esperado debe ser similar a 
+    Los resultados esperados deben ser similares a los siguientes:
 
     <img src="assets/01.png" width="50%"/>
 
@@ -74,9 +75,9 @@ En el ejemplo 3 solicitamos el código para registrar usuario con número telef�
 
     </br>
 
-Comprobar que el registro se hizo correctamente
+3. El último paso es la comprobación de que el registro fue correcto, como se aprecia en la siguiente imagen.
 
-<img src="assets/05.png" width="80%"/>
+    <img src="assets/05.png" width="80%"/>
 
 </br>
 </br>

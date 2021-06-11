@@ -1,21 +1,27 @@
-# Postwork 1 - Accede con Google
-
-En los ejemplos de esta sesión aprendimos a iniciar sesión y registrar usuarios sin agregar código del lado del servidor.
-Para el primer postwork queremos poner en práctica, lo que ya aprendiste. El proyecto base tiene el botón de Google, cuando demos clic en este botón no debe permitir iniciar sesión con algún correo de Google. Te recomendamos apoyarte con la [documentación](https://firebase.google.com/docs/auth/android/google-signin)
+# Postwork 1 - Firebase Authentication - Simplifica el registro e inicio de sesión
 
 ## Objetivo
 
-* Agrega inicio con Google
+* Establecer el inicio de sesión en la app mediante una cuenta de Google.
+* Simular el inicio de sesión con el método de autenticación de la cuenta de Google.
 
 ## Desarrollo
 
-> TIPS: 
-> - Recuerda habilitar el inicio por Google en Firebase Console
-> - Agregar la dependencia
->   - Implementation 'com.google.android.gms:play-services-auth:19.0.0'
-> - Puedes hacer la implementación en el *MainActivity*
+En los ejemplos de esta sesión aprendimos a iniciar sesión y registrar usuarios sin agregar código del lado del servidor. Para el Postwork 01 queremos poner en práctica lo aprendido. 
 
-Propuesta de flujo
+El proyecto base tiene el botón de Google. Al hacer clic sobre él, este debe permitir iniciar sesión con algún correo de Google. Te recomendamos apoyarte con la documentación oficial.
+
+[Haz clic aquí para consultar la documentación.](https://firebase.google.com/docs/auth/android/google-signin)
+
+### Indicaciones generales:
+- Habilita el inicio por Google desde Firebase Console previo a la edición de código.
+- Establece la siguiente dependencia: 
+*Implementation 'com.google.android.gms:play-services-auth:19.0.0'*
+Es posible hacer la implementación en el *MainActivity*
+- Al final ejecuta la app e inicia sesión con la cuenta de Google. Para concluir verifica que tu correo de login esté en el panel de usuarios en Firebase Console, como se aprecia en la siguiente imagen. <img src="02.png" width="50%"/>
+
+#### A continuación se muestra una propuesta de flujo:
+
 
 <img src="01.png" width="50%"/>
 
