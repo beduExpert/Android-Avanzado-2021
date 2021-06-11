@@ -1,34 +1,38 @@
 
 # :wave: Sesión 02: Firebase Crashlytics - Reportes y seguimiento a errores
 
-## :dart: Objetivos
+## 🎯  Objetivo de la sesión:
 
-Agregar los objetivos de las sesión (Mínimo poner tres objetivos y Borrar está linea una vez se hay leido )
+- Gestionar Firebase Crashlytics en el código de la app para detectar y solucionar errores desde su sistema.
 
-- Objetivo 1
-- Objetivo 2
-- Objetivo 3
+## 🎯 Que aprenderán
+
+- Implementación de firebase-crashlytics en un proyecto.
+- Generación de errores en un ambiente controlado.
+- Manejo del dashboard de Crashlytics.
+- Gestión de errores en Firebase Console.
+
 
 ## ⚙ Requisitos
 
-+ Agregar los requisitos de la sesión 
-+ Agregar el link de descarga en caso de ser necesario para la sesión (Borrar estás lineas una vez se hayan leido)
++ Haber revisado el prework de esta sesión
++ Cuenta de Google
++ Proyecto de Firebase
++ Android studio
 
-## 🎩 Buenas prácticas
+## 🎩 Desarrollo
 
-Agregar buenas prácticas en caso de que la sesión lo requierea, de no ser así borrar está intrucción una vez se haya leido.
+En esta sesión aprenderemos cuáles son los servicios de Firebase sumados con Crashlytics, cómo se implementa dentro de un proyecto de Android y de qué forma permite detectar, seguir y resolver errores generados en nuestra app. Para este propósito se generarán errores en un ambiente controlado y se gestionarán desde el dashboard de Firebase.
+
+Firebase Crashlytics proporciona reportes con estadísticas prácticas y claras sobre los problemas de la app, y basado en el establecimiento de comentarios del funcionamiento, así como seguimiento a los bugs a través de la plataforma de Firebase Console, con el propósito de resolver los fallos y brindar una experiencia de usuario satisfactoria.
+
+</br>
 
 ## 📂 Organización de la clase
 
-Agregar los ejemplos y retos que va a requerir la sesión (Borrar está linea una vez se hay leido)
-
-- [Ejemplo 01:  Nombre del ejemplo](./Ejemplo-01/README.md)
-    - [Reto 01: Nombre del reto 01](./Reto-01/README.md)
-    - [Reto  02: Nombre del reto 02](./Reto-02/README.md)
-- [Ejemplo 02: Nombre del ejemplo 02](./Ejemplo-02/README.md)
-    - [Reto 03: Nombre del reto 03](./Reto-03/README.md)
-- [Postwork: Nombre del postwork](./Postwork/README.md)
-
-
-
-
+- [Ejemplo 01:  Implementar Firebase Crashlytics](./Ejemplo-01/README.md)
+- [Ejemplo 02: Provocar un error controlado](./Ejemplo-02/README.md)
+    - [Reto 01: Dashboard Crashlytics](./Reto-01/README.md)
+- [Ejemplo 03: Funciones avanzadas](./Ejemplo-03/README.md)
+    - [Reto  02: Tipos de errores y su gestión](./Reto-02/README.md)
+- [Postwork: Reportes y seguimiento a errores](./Postwork/README.md)
