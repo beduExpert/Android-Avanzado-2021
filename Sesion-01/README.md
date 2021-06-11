@@ -17,7 +17,7 @@ Implementar Firebase Authentication en el código de la app para operar el regis
 + Proyecto de Firebase
 + Android studio
 
-## Desarrollo
+## 🎩 Desarrollo
 
 En esta sesión aprenderemos cuáles son los servicios de Firebase, las funciones que suma Authentication, y cómo se implementa dentro de un proyecto de Android para un registro e inicio de sesión enlazados con Auth, como la llamaremos también. 
 Asimismo, se operará la app para verificar la funcionalidad del registro y del login mediante SMS,, correo y cuenta de Google.
