@@ -17,10 +17,11 @@ Construir una aplicación Android con funciones inyectadas por dependencias y li
 - Android Studio
 - Cuenta de Google
 - Teléfono físico (Recomendado)
+- SDK Vuforia
 
 ## 💻 Proyecto
 
-Desarrollar app Android con funciones agregadas mediante Firebase Authentication, Firebase Crashlytics, Dependencias, Navigation, SDK´s, Deploys, Librerías y RA. Utilizando Kotlin como lenguaje principal de desarrollo.
+Desarrollar una app Android con Kotlin como principal lenguaje de desarrollo, con funciones agregadas mediante Firebase Authentication, Firebase Crashlytics, Dependencias, Navigation, SDK´s, Deploys, Librerías y RA.
 
 ## :bookmark_tabs: Sesiones
 

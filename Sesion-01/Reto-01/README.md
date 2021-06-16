@@ -1,7 +1,5 @@
 # Reto 01: Iniciar sesión
 
-En el ejemplo 2 agregamos la función para crear usuarios
-
 ## Objetivo
 
 * Implementar el inicio de sesión en el proyecto Android y simularlo con respuestas de mensajes de registro no encontrado, contraseña errónea y bienvenido.

@@ -5,7 +5,7 @@
 
 - Gestionar Firebase Crashlytics en el código de la app para detectar y solucionar errores desde su sistema.
 
-## 🎯 Que aprenderán
+## 🎯 Qué aprenderán
 
 - Implementación de firebase-crashlytics en un proyecto.
 - Generación de errores en un ambiente controlado.
@@ -15,7 +15,7 @@
 
 ## ⚙ Requisitos
 
-+ Haber revisado el prework de esta sesión
++ Revisión previa del prework de esta sesión
 + Cuenta de Google
 + Proyecto de Firebase
 + Android studio

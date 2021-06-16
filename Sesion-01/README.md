@@ -4,7 +4,7 @@
 ## 🎯  Objetivo de la sesión:
 Implementar Firebase Authentication en el código de la app para operar el registro e inicio de sesión con los métodos de Firebase.
 
-## 🎯 Que aprenderán
+## 🎯 Qué aprenderán
 
 - Implementación de firebase-auth en un proyecto.
 - Gestión de usuarios sin código en el servidor.
@@ -12,7 +12,7 @@ Implementar Firebase Authentication en el código de la app para operar el regis
 
 ## ⚙ Requisitos
 
-+ Haber revisado el prework de esta sesión
++ Revisión previa del prework de esta sesión
 + Cuenta de Google
 + Proyecto de Firebase
 + Android studio
@@ -22,32 +22,32 @@ Implementar Firebase Authentication en el código de la app para operar el regis
 En esta sesión aprenderemos cuáles son los servicios de Firebase, las funciones que suma Authentication, y cómo se implementa dentro de un proyecto de Android para un registro e inicio de sesión enlazados con Auth, como la llamaremos también. 
 Asimismo, se operará la app para verificar la funcionalidad del registro y del login mediante SMS,, correo y cuenta de Google.
 
-Firebase Authentication proporciona servicios de backend, SDK y bibliotecas de IU preelaboradas que sirven para autenticar a los usuarios en tu app. Así, es posible la autenticación mediante contraseñas, números de teléfono, proveedores de identidad federada populares, como Google, Facebook y Twitter, y mucho más.
+Firebase Authentication proporciona servicios de backend, SDK y bibliotecas de IU preelaboradas que sirven para autenticar a los usuarios en tu app. Así, es posible la autenticación mediante contraseñas, números de teléfono, proveedores de identidad federada populares, como Google, Facebook y Twitter, y muchos más.
 
 
 ## ⚙ Configuración
 
 ### Firebase - Setup inicial
 
-Antes de implementar firebase en nuestra app, debemos configurar un proyecto en la Firebase console. Para esto seguiremos los siguientes pasos:
+Antes de implementar firebase en nuestra app, debemos configurar un proyecto en la Firebase console. Para ello deben realizarse los siguientes pasos:
 
-- Abriremos [Firebase Console](https://console.firebase.google.com/?hl=es) con una cuenta google que poseamos y crearemos un proyecto nuevo.
+1. Abrir Firebase Console mediante una cuenta google que poseamos.
+2. Crear un proyecto nuevo.
 
     <img src="images/01.png" width="50%"/>
 
-- Asignamos un nombre (en este caso, le llamaremos Bedu)
-
-     Aceptaremos Google Analytics 
+3. Asignar un nombre al proyecto. En este caso se le llamará "Bedu".
+4. Aceptar la habilitación de Google Analytics para el proyecto.
 
     <img src="images/02.png" width="50%"/>
 
-- Seleccionamos México como *Ubicación de Analytics*, aceptaremos todos los términos y click en *Crear proyecto*
+5. Seleccionar México como ubicación Analytics, hacer clic en los recuadros para aceptar todos los términos, y finalmente hacer clic en Crear proyecto.
 
     <img src="images/03.png" width="50%"/>
 
-- Listo, ya creamos nuestro Firebase Project
+Y listo, ya creamos nuestro Firebase Project.
 
-    <img src="images/04.png" width="50%"/>
+<img src="images/04.png" width="50%"/>
 
 </br>
 

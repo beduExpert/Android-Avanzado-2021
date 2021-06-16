@@ -1,7 +1,5 @@
 # Reto  02: Verificar y reenviar código
 
-En el ejemplo 3 solicitamos el código para registrar usuario con número telefónico, ahora concluimos el registro.
-
 ## Objetivo
 
 * Operar el registro de una cuenta con número telefónico y la simulación del inicio de sesión con el mismo método mediante la validación del código de Auth y/o con la solicitud de un código nuevo.

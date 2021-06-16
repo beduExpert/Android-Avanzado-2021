@@ -60,7 +60,7 @@ Para hacerlo realiza los siguientes pasos:
 
     > Pro-tip: la primera parte es la ruta donde está instalado **keytool**, luego la ruta donde está la llave, y después los datos de ésta.
 
-    La salida espera es:
+    La salida esperada es:
 
     <img src="assets/10.png" width="80%"/>
 
@@ -255,7 +255,7 @@ Para hacerlo realiza los siguientes pasos:
       }
       ``` 
 
-19. Ahora debe ejecutarse la app un número telefónico, como se aprecia en la imagen.
+19. Ahora debe ejecutarse la app con un número telefónico, como se aprecia en la imagen.
 
     <img src="assets/12.png" width="70%"/>
 
