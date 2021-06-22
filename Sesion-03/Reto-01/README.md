@@ -111,7 +111,6 @@ override fun onCreate(savedInstanceState: Bundle?) {
   }
 
   Log.e("MainActivity", testString)
-  Log.e("MainActivity", provideUserDataManager.toString())
 }
 
 override fun onResume() {
