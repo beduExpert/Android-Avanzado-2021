@@ -101,9 +101,6 @@ lateinit var randomNum: String
 @Named("randomNumAct")
 lateinit var randomNumAct: String
 
-@Inject
-lateinit var provideUserDataManager: UserDataManager
-
 override fun onCreate(savedInstanceState: Bundle?) {
   super.onCreate(savedInstanceState)
   setContentView(R.layout.activity_main)
