@@ -29,7 +29,7 @@ Desarrollar una app Android con Kotlin como principal lenguaje de desarrollo, co
 2. [Firebase Crashlytics ](./Sesion-02)(Reportes y seguimiento a errores)
 3. [Dependencias ](./Sesion-03)(Simplifica el código)
 4. [Navigation ](./Sesion-04)(Mejora el flujo de datos)
-5. [Terceros ](./Sesion-05)(Implementar SDK's de terceros) Facebook, Paypal, Spotify, Conekta
+5. [Terceros ](./Sesion-05)(Implementar SDK's de terceros) Facebook, Spotify, Conekta
 6. [Deploys ](./Sesion-06)(Publica en tiendas altenativas a Google Play o en un servidor propio)
 7. [Librerías ](./Sesion-07)(Ahorra código y mejora el flujo)
 8. [RA ](./Sesion-08)(Suma valor audiovisual con RA)
