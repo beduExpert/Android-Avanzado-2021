@@ -39,11 +39,14 @@ En este ejemplo enviaremos argumentos de manera segura, con la forma de navegar 
 5. Se proseguirá con el menú y los paneles. Para ello creamos el recurso de menú **overflow_menu** y le agregamos el siguiente código.
 
     ```xml
-    <item
-        android:id="@+id/settings_dest"
-        android:icon="@drawable/ic_settings"
-        android:menuCategory="secondary"
-        android:title="@string/settings" />
+    <?xml version="1.0" encoding="utf-8"?>
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/settings_dest"
+            android:icon="@drawable/ic_settings"
+            android:menuCategory="secondary"
+            android:title="@string/settings" />
+    </menu>
     ```
 
 6. Luego se abre **MainActivity** y se agregan las siguiente líneas de código. 
@@ -100,6 +103,12 @@ En este ejemplo enviaremos argumentos de manera segura, con la forma de navegar 
     appBarConfiguration = AppBarConfiguration(
             setOf(R.id.home_dest, R.id.deeplink_dest),
             drawerLayout)
+
+    setupActionBar(navController, appBarConfiguration)
+
+    setupNavigationMenu(navController)
+
+    setupBottomNavMenu(navController)
     ```
 
     > Nota: los destinos listados en el AppBarConfiguration no agregan la flecha **Atrás** al ser seleccionados, ya que son de orden superior. Por ejemplo: al entrar a Settings veremos la fecha de Back.
