@@ -15,7 +15,7 @@ La pantalla Spotify debe tener como mínimo la siguiente interfaz:
 
 Una vez que se tiene la pantalla realizamos los siguientes pasos para crear y configurar nuestro proyecto desde el administrador de Spotify:
 
-1. Cada empresa y/o desarrollador proveerá el SDK de una manera diferente. En el caso de Spotify brindan el **aar**. Este se puede descargar de la documentación oficial o del siguiente vínculo.  [Link SDK Spotify](./spotify.aar)
+1. Cada empresa y/o desarrollador proveerá el SDK de una manera diferente. En el caso de Spotify brindan el **aar**. Este se puede descargar de la documentación oficial o del siguiente vínculo.  [Link SDK Spotify](./spotify-app-remote-release-0.7.2.aar)
 
 2. Una vez descargado el SDK, creamos una carpeta con el nombre **libs** en la raíz de nuestro proyecto, y dentro agregamos el archivo **aar**.
  
