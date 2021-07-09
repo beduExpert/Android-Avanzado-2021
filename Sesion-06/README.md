@@ -1,34 +1,40 @@
 
-# :wave: Sesión 06: Deploys - Publica en tiendas altenativas a Google Play o en un servidor propio
+# :wave: Sesión 06: Deploys - Publica en tiendas alternativas a Google Play o en servidor externo
 
-## :dart: Objetivos
+## 🎯  Objetivo de la sesión:
 
-Agregar los objetivos de las sesión (Mínimo poner tres objetivos y Borrar está linea una vez se hay leido )
+- Gestionar la app en tiendas alternativas a Google Play o en servidor externo.
 
-- Objetivo 1
-- Objetivo 2
-- Objetivo 3
+## 🎯 Qué aprenderán
+
+- Generar APK / APP Bundle con llave “Release”
+- Publicación y gestión de app Android en tiendas alternativas a Google Play Store.
+- Publicación de app Android en servidor externo y gestión de las actualizaciones programáticamente.
 
 ## ⚙ Requisitos
 
-+ Agregar los requisitos de la sesión 
-+ Agregar el link de descarga en caso de ser necesario para la sesión (Borrar estás lineas una vez se hayan leido)
++ Android studio
++ Cuenta de GitHub
++ Cuenta de ApkPure
 
-## 🎩 Buenas prácticas
+## 🎩 Desarrollo
 
-Agregar buenas prácticas en caso de que la sesión lo requierea, de no ser así borrar está intrucción una vez se haya leido.
+En esta sesión aprenderemos a crear la llave con la que generamos el apk firmado, para, posteriormente, publicarlo en tiendas alternativas a  Google Play Store. En suma, gestionaremos las actualizaciones programáticamente desde un servidor externo.
+
+Conforme el mundo de Android continúa su expansión, surgen alternativas para gestionar las apps: instalaciones y actualizaciones.
+
+A continuación veremos algunas alternativas al ecosistema de Google Play.
+
+
+</br>
 
 ## 📂 Organización de la clase
 
-Agregar los ejemplos y retos que va a requerir la sesión (Borrar está linea una vez se hay leido)
-
-- [Ejemplo 01:  Nombre del ejemplo](./Ejemplo-01/README.md)
-    - [Reto 01: Nombre del reto 01](./Reto-01/README.md)
-    - [Reto  02: Nombre del reto 02](./Reto-02/README.md)
-- [Ejemplo 02: Nombre del ejemplo 02](./Ejemplo-02/README.md)
-    - [Reto 03: Nombre del reto 03](./Reto-03/README.md)
-- [Postwork: Nombre del postwork](./Postwork/README.md)
-
-
-
-
+- 
+    - [Reto 01: Generando llave y firmando App](./Reto-01/README.md)
+- [Ejemplo 01: Subiendo APK a servidor externo](./Ejemplo-01/README.md)
+- [Ejemplo 02: Descargando e instalando APK programáticamente (Manual)](./Ejemplo-02/README.md)
+    - [Reto  02: Descargando actualizaciones automáticamente](./Reto-02/README.md)
+- [Ejemplo 03: Publicando en ApkPure](./Ejemplo-03/README.md)
+    - [Reto  02: Publicando en ApkMirror](./Reto-02/README.md)
+- [Postwork: Agregando actualización a tu proyecto](./Postwork/README.md)
