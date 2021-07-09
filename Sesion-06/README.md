@@ -36,5 +36,5 @@ A continuación veremos algunas alternativas al ecosistema de Google Play.
 - [Ejemplo 02: Descargando e instalando APK programáticamente (Manual)](./Ejemplo-02/README.md)
     - [Reto  02: Descargando actualizaciones automáticamente](./Reto-02/README.md)
 - [Ejemplo 03: Publicando en ApkPure](./Ejemplo-03/README.md)
-    - [Reto  02: Publicando en ApkMirror](./Reto-02/README.md)
+    - [Reto  03: Publicando en ApkMirror](./Reto-02/README.md)
 - [Postwork: Agregando actualización a tu proyecto](./Postwork/README.md)
