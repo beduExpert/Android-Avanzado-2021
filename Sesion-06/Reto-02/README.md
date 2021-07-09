@@ -85,10 +85,21 @@ Ya tienes la información necesaria para completar este reto. A continuación te
 <details>
     <summary>Solución</summary>
 
+-> Dentro de la clase **Utils**
+
+```kotlin
+fun buildAlertDialog(context: Context, resTitle: Int, resMessage: Int): AlertDialog {
+    val alertDialog = AlertDialog.Builder(context).create()
+    alertDialog.setTitle(context.getString(resTitle))
+    alertDialog.setMessage(context.getString(resMessage))
+    alertDialog.setCancelable(false)
+    return alertDialog
+}
+```
+
 -> Dentro del **companion object** en el MainActivity
 
   ```kotlin
-  
   const val urlCode =
   "https://github.com/andres2093/AndroidAvanzadoS6/raw/main/versionCode.txt"
   ```
@@ -108,7 +119,7 @@ Ya tienes la información necesaria para completar este reto. A continuación te
 
               Log.e("TAG", "onCreate: $remoteVersionCode, $localVersionCode")
               runOnUiThread {
-                  if (remoteVersionCode.toInt() == localVersionCode) {
+                  if (remoteVersionCode.toInt() > localVersionCode) {
                       val alertDialog: AlertDialog = buildAlertDialog(
                           this,
                           R.string.new_version,

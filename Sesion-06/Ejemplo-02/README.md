@@ -16,7 +16,6 @@ En este ejemplo descargaremos e instalaremos el APK publicado en el ejemplo ante
       android:id="@+id/btnDownload"
       android:layout_width="0dp"
       android:layout_height="70dp"
-      android:visibility="gone"
       android:layout_marginTop="10dp"
       android:text="Download app"
       android:textStyle="bold"
@@ -92,7 +91,23 @@ En este ejemplo descargaremos e instalaremos el APK publicado en el ejemplo ante
     </paths>
     ```
 
-6. Una vez realizado lo anterior es necesario crear una clase llamada **DownloadController** dentro del package **utils**, y se le agrega el siguiente código:
+6. Agregamos los Strings.
+
+    ```xml
+    <string name="downloading">Downloading…</string>
+    <string name="title_file_download">APK is downloading</string>
+    <string name="storage_access_required">Storage access is required to downloading the file.</string>
+    <string name="storage_permission_denied">Storage permission request was denied.</string>
+    <string name="ok">OK</string>
+
+    <string name="new_version">New version</string>
+    <string name="new_version_msg">We recommend installing the update</string>
+
+    <string name="btn_update">Update</string>
+    <string name="btn_cancel">Cancel</string>
+    ```
+
+7. Una vez realizado lo anterior es necesario crear una clase llamada **DownloadController** dentro del package **utils**, y se le agrega el siguiente código:
 
     ```kotlin
     class DownloadController(private val context: Context, private val url: String) {
@@ -177,7 +192,7 @@ En este ejemplo descargaremos e instalaremos el APK publicado en el ejemplo ante
 
     </br>
 
-7. Posteriormente regresamos al **MainActivity** y llamamos a las funciones que agregamos a la clase **utils**.
+8. Posteriormente regresamos al **MainActivity** y llamamos a las funciones que agregamos a la clase **utils**.
 
     ```kotlin
     override fun onRequestPermissionsResult(
@@ -220,7 +235,7 @@ En este ejemplo descargaremos e instalaremos el APK publicado en el ejemplo ante
     }
     ```
 
-8. Agregamos el siguiente código al inicio del MainActivity, que incluye el permiso de almacenamiento y la ruta de nuestro APK alojado en GitHub.
+9. Agregamos el siguiente código al inicio del MainActivity, que incluye el permiso de almacenamiento y la ruta de nuestro APK alojado en GitHub.
 
     > Nota: la ruta la copiamos haciendo click derecho en el botón de Download y copiar dirección de enlace, desde GitHub:
 
@@ -228,18 +243,24 @@ En este ejemplo descargaremos e instalaremos el APK publicado en el ejemplo ante
 
     ```kotlin
     companion object {
-      const val PERMISSION_REQUEST_STORAGE = 0
-      const val urlApp = "https://github.com/andres2093/AndroidAvanzadoS6/raw/main/app-release.apk"
+        const val PERMISSION_REQUEST_STORAGE = 0
+        const val urlApp = "https://github.com/andres2093/AndroidAvanzadoS6/raw/main/app-release.apk"
     }
+
+    private lateinit var downloadController: DownloadController
     ```
 
-9. Después invocamos la función en el evento del botón “btnDownload”:
+10. Después invocamos la función en el evento del botón “btnDownload” e inicializamos la clase **downloadController** dentro del **onCreate**:
 
     ```kotlin
+    downloadController = DownloadController(this, urlApp)
+
+    ...
+
     checkStoragePermission()
     ```
 
-10. Ejecutamos la app y hacemos click en el botón **Download**, y observaremos que inicia la descarga.
+11. Ejecutamos la app y hacemos click en el botón **Download**, y observaremos que inicia la descarga.
 
     <img src="assets/02.png" width="60%"/>
 
