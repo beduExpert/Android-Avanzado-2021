@@ -341,7 +341,7 @@ Para hacerlo realizamos los siguientes pasos en el proyecto utilizado previament
         android:layout_height="wrap_content"
         android:orientation="vertical" >
 
-        <com.github.mikephil.charting.charts.BarChart
+        <com.github.mikephil.charting.charts.LineChart
             android:id="@+id/chart"
             android:layout_width="match_parent"
             android:layout_height="200dp" />

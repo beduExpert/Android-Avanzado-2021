@@ -21,7 +21,7 @@ Puedes encontrar el ejemplo de StackBar dentro del repositorio oficial.
 <details>
     <summary>Solución</summary>
 
--> Dentro del xml **activity_stackedbar**
+-> Dentro del xml **activity_barchart**
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>

@@ -50,13 +50,42 @@ A continuación se presentan los requerimientos para este Postwork.
 
 2. Sincronizamos el proyecto.
 
-3. Agregamos el permiso de internet.
+3. Creamos la clase **Application**, con el siguiente código.
+
+    ```kotlin
+    class Application : Application() {
+        override fun onCreate() {
+            super.onCreate()
+            Fresco.initialize(this)
+        }
+    }
+    ```
+
+4. Agregamos el permiso de internet, y llamamos la clase Application dentro de la etiqueta application.
 
     ```xml
     <uses-permission android:name="android.permission.INTERNET" />
+
+    ...
+
+    android:name=".Application"
     ```
 
-4. Dentro del **FrescoActivity** sobreescribimos el **onResume** con el siguiente código, para cargar la imagen cada vez que entremos a esta pantalla.
+5. Reemplazamos el **view** de **activity_fresco** por el de **Fresco**.
+
+    ```xml
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sDView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02" />
+    ```
+
+6. Dentro del **FrescoActivity** sobreescribimos el **onResume** con el siguiente código, para cargar la imagen cada vez que entremos a esta pantalla.
 
     ```kotlin
     override fun onResume() {
@@ -67,7 +96,7 @@ A continuación se presentan los requerimientos para este Postwork.
     }
     ```
 
-5. Cargamos los recursos que servirán como **progressBarImage** y **failureImage**, “Las importamos desde los assets de Android Studio”. Además agregamos la imagen a la carpeta **drawable**, la cual utilizaremos para la carga local.
+7. Cargamos los recursos que servirán como **progressBarImage** y **failureImage**, “Las importamos desde los assets de Android Studio”. Además agregamos la imagen a la carpeta **drawable**, la cual utilizaremos para la carga local.
 
     <img src="assets/01.png" width="70%"/>
 
@@ -75,7 +104,7 @@ A continuación se presentan los requerimientos para este Postwork.
 
     <img src="assets/03.png" width="70%"/> 
 
-6. Una vez cargados los recursos, añadimos lo siguiente dentro del **onCreate**, lo cual corresponde a la configuración y asignación de los placeholders.
+8. Una vez cargados los recursos, añadimos lo siguiente dentro del **onCreate**, lo cual corresponde a la configuración y asignación de los placeholders.
 
     ```kotlin
     val resourcesHierarchy = binding.sDView.hierarchy
@@ -109,7 +138,7 @@ A continuación se presentan los requerimientos para este Postwork.
     binding.sDView.hierarchy = resourcesHierarchy
     ```
 
-7. Después agregamos los eventos de los botones.
+9. Después agregamos los eventos de los botones.
 
     ```kotlin
     binding.btnLoadValid.setOnClickListener {
@@ -127,7 +156,7 @@ A continuación se presentan los requerimientos para este Postwork.
     }
     ```
 
-8. Ejecutamos el proyecto, abrimos la pantalla **Fresco**, y como estaba previsto nos muestra la imagen de Bedu. Si haces clic en:
+10. Ejecutamos el proyecto, abrimos la pantalla **Fresco**, y como estaba previsto nos muestra la imagen de Bedu. Si haces clic en:
 
     - **Local image:** carga la imagen local, que en este agregamos la Beto.
     - **Invalid image:** intenta cargar la imagen desde una url invalida, lo que provoca que se muestre la imagen que configuramos en el failure.

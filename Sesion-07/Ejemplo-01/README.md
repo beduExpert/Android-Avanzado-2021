@@ -1,4 +1,4 @@
-# Ejemplo 01: Subiendo APK a servidor externo
+# Ejemplo 01: Implementando Toasty
 
 ## Objetivo
 
@@ -37,13 +37,13 @@ Con la intención de agregar la dependencia de Toasty a nuestra app, realizaremo
 4. Abrimos el **ToastyActivity** y agregamos el siguiente código en el evento del botón Error.
 
     ```kotlin
-    Toasty.error(yourContext, "This is an error toast.", Toast.LENGTH_SHORT, true).show();
+    Toasty.error(this, "This is an error toast.", Toast.LENGTH_SHORT, true).show()
     ```
 
 5. Después sumamos el siguiente código en el evento del botón Success.
 
     ```kotlin
-    Toasty.success(this, "Success!", Toast.LENGTH_SHORT, true).show();
+    Toasty.success(this, "Success!", Toast.LENGTH_SHORT, true).show()
     ```
 
 6. Ejecutamos el proyecto, hacemos clic en **Toasty**, seguido del botón Error, y vemos que nos muestra un Aviso “Toast” con una interfaz más colorida que los clásicos mensajes de Android.
