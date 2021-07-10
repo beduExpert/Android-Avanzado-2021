@@ -1,34 +1,32 @@
 
 # :wave: Sesión 07: Librerías - Ahorra código y mejora el flujo
 
-## :dart: Objetivos
+## 🎯  Objetivo de la sesión:
 
-Agregar los objetivos de las sesión (Mínimo poner tres objetivos y Borrar está linea una vez se hay leido )
+- Implementar librerías top para gestionar imágenes, gráficas (barras, lineas, pie), atajos y alertas en la app con un flujo correcto.
 
-- Objetivo 1
-- Objetivo 2
-- Objetivo 3
+## 🎯 Qué aprenderán
+
+- Implementar Toasty en proyecto base Android para mostrar avisos "Toast" con mejoras visuales, y personalizarlos.
+- Agregar gráficas de barras, líneas, y pie, con un rendimiento alto, mediante la implementación de MpAndroidChart.
+- Crear accesos directos desde el launcher, mediante la implementación de la librería shortbread, que envíen al usuario a tareas comunes en la app.
 
 ## ⚙ Requisitos
 
-+ Agregar los requisitos de la sesión 
-+ Agregar el link de descarga en caso de ser necesario para la sesión (Borrar estás lineas una vez se hayan leido)
++ Android studio
 
-## 🎩 Buenas prácticas
+## 🎩 Desarrollo
 
-Agregar buenas prácticas en caso de que la sesión lo requierea, de no ser así borrar está intrucción una vez se haya leido.
+En esta sesión implementaremos en un nuevo proyecto algunas de las mejores librerías de Android, y así ahorraremos código al delegar algunas responsabilidades a proyectos optimizados y experimentados. Además reconoceremos sitios que alojan librerías en desarrollo, así como las librerías con las que se puede llegar mucho más lejos y con menos esfuerzo en cuestión de funcionalidad y diseño gráfico.
+
+</br>
 
 ## 📂 Organización de la clase
 
-Agregar los ejemplos y retos que va a requerir la sesión (Borrar está linea una vez se hay leido)
-
-- [Ejemplo 01:  Nombre del ejemplo](./Ejemplo-01/README.md)
-    - [Reto 01: Nombre del reto 01](./Reto-01/README.md)
-    - [Reto  02: Nombre del reto 02](./Reto-02/README.md)
-- [Ejemplo 02: Nombre del ejemplo 02](./Ejemplo-02/README.md)
-    - [Reto 03: Nombre del reto 03](./Reto-03/README.md)
-- [Postwork: Nombre del postwork](./Postwork/README.md)
-
-
-
-
+- [Ejemplo 01: Implementando Toasty](./Ejemplo-01/README.md)
+    - [Reto 01: Personalizando mensajes](./Reto-01/README.md)
+- [Ejemplo 02: Agregando Gráficas by MpAndroidChart](./Ejemplo-02/README.md)
+    - [Reto  02: Mostrando StackedBar](./Reto-02/README.md)
+- [Ejemplo 03: Mostrando atajos desde el launcher](./Ejemplo-03/README.md)
+    - [Reto  03: Agregando más atajos](./Reto-02/README.md)
+- [Postwork: Implementando Fresco](./Postwork/README.md)
