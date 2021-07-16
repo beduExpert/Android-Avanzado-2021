@@ -32,4 +32,4 @@ Desarrollar una app Android con Kotlin como principal lenguaje de desarrollo, co
 5. [Terceros ](./Sesion-05)(Implementar SDK's de terceros) Facebook, Spotify, Conekta
 6. [Deploys ](./Sesion-06)(Publica en tiendas altenativas a Google Play o en un servidor externo)
 7. [Librerías ](./Sesion-07)(Ahorra código y mejora el flujo)
-8. [RA ](./Sesion-08)(Suma valor audiovisual con RA)
+8. [RA ](./Sesion-08)(Implementaciones más utilizadas de RA)
