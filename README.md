@@ -9,15 +9,15 @@ Construir una aplicación Android con funciones inyectadas por dependencias y li
 ## Datos relevantes
 
 - Firebase es una plataforma de Google para desarrollar y facilitar la creación de apps con alta calidad de una forma rápida.
-- Vuforia es un kit de desarrollo de software para dispositivos móviles que permite la creación de aplicaciones de realidad aumentada.
-- Jetpack es un conjunto de bibliotecas que ayuda a los desarrolladores a seguir las prácticas recomendadas, reducir el código estándar y escribir código que funcione de manera coherente en los dispositivos y las versiones de Android, para que puedan enfocarse en el código que les interesa.
+- ArCore es un kit de desarrollo de software para dispositivos móviles que permite la creación de aplicaciones de realidad aumentada.
+- Jetpack es un conjunto de bibliotecas que ayuda a los desarrolladores a seguir las prácticas recomendadas, reducir el código estándar y escribir código que funcione de manera coherente en los dispositivos y las versiones de Android, para que puedan enfocarse en el código que les interesa.			
 
 ## :gear: Requerimientos
 
 - Android Studio
 - Cuenta de Google
 - Teléfono físico (Recomendado)
-- SDK Vuforia
+- SDK ArCore
 
 ## 💻 Proyecto
 
