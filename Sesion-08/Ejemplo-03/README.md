@@ -17,11 +17,6 @@ Realiza lo siguiente para renderizar los modelos.
 
     <img src="assets/02.png" width="80%"/> 
 
-    ```gradle
-    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.17.1'
-    implementation 'com.google.ar.sceneform:assets:1.17.1'
-    ``` 
-
 2. Descarga el modelo de la [siguiente página](https://github.com/beduExpert/Android-Avanzado-2021/raw/main/Sesion-08/Ejemplo-03/models/yellow_sunglasses.sfb) y la textura de la [siguiente página](https://github.com/beduExpert/Android-Avanzado-2021/raw/main/Sesion-08/Ejemplo-03/models/fox_face_mesh_texture.png)
 
 3. Pega el modelo en directorio raw y pega la textura en drawable.
